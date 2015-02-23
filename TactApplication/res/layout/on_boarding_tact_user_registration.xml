@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/on_boarding_tact_login"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/main_scroll_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <!-- CONTENT LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/loginError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/userPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/sourceUser"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textColorHint="@color/mid_grey"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:id="@+id/incorrect_login_error"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/red"
+                            android:text="@string/login_email_error"
+                            android:padding="10dp"/>
+
+                        <EditText
+                            android:id="@+id/textUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/reset_password_hint"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:background="@null"
+                            android:textColorHint="@color/mid_grey"
+                            android:layout_marginBottom="5dp"/>
+                        <include layout="@layout/divider_layout" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_marginTop="30dp"
+                            android:text="@string/text_continue"
+                            style="@style/tact_orange_button"
+                            android:id="@+id/buttonContinueReg"/>
+
+                        <LinearLayout
+
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/progress_bar_user_reg"
+                            android:layout_width="200dp"
+                            android:layout_height="40dp"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            >
+
+                            <ProgressBar
+                                android:visibility="visible"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background ="@xml/white_progressbar"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="remoteAccessConsumerKey">3MVG9A2kN3Bn17htGxX9v4anp5Zy0DNIAwAwRMYoNVaFHimfspN3iGN7My9mRnR8YqyOP.8Y6abpuS9httLLD</string>
+    <string name="oauthRedirectURI">com.tactile.tact:///mobilesdk/detect/oauth/done</string>
+    <string-array name="oauthScopes">
+        <item>api</item>
+        <item>id</item>
+        <item>full</item>
+        <item>refresh_token</item>
+    </string-array>
+    <string name="androidPushNotificationClientId"></string>
+</resources>

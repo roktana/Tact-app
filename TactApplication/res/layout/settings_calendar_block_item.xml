@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/calendar_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/padding_standard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/calendar_user"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/padding_standard"
+                android:fontFamily="sans-serif"
+                android:text="@string/remote_sources"
+                android:textSize="@dimen/xl_text_size"
+                android:textColor="@color/action_bar_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:paddingLeft="@dimen/padding_standard"
+            android:paddingRight="@dimen/padding_standard"
+            android:orientation="vertical"
+            android:id="@+id/calendar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <include layout="@layout/settings_calendar_field" />
+            <include layout="@layout/settings_calendar_field" />
+            <include layout="@layout/settings_calendar_field" />
+            <include layout="@layout/settings_calendar_field" />
+            
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

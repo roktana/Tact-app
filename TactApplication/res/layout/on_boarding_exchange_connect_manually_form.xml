@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/on_boarding_local_sources"
+    android:background="@drawable/on_boarding_bg">
+
+    <LinearLayout
+        android:id="@+id/main_body_full"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/main_scroll_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- CONTENT LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/error_text"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/red"
+                        android:text="Hint Error Test"
+                        android:layout_marginTop="20dp"/>
+
+                    <!-- Email field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <EditText
+                            android:id="@+id/exchange_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:editable="true"
+                            android:hint="@string/email"
+                            android:lines="1"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Server field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/server"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <EditText
+                            android:id="@+id/exchange_server"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textUri"
+                            android:editable="true"
+                            android:hint="@string/email"
+                            android:lines="1"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Domain field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Domain"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <EditText
+                            android:id="@+id/exchange_domain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textUri"
+                            android:editable="true"
+                            android:hint="Optional"
+                            android:lines="1"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Username field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <EditText
+                            android:id="@+id/exchange_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:editable="true"
+                            android:hint="Optional"
+                            android:lines="1"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Password field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <EditText
+                            android:id="@+id/exchange_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:editable="true"
+                            android:hint="@string/password"
+                            android:lines="1"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Button -->
+                    <LinearLayout
+                        android:id="@+id/buttonContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="40dp">
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/orange_btn"
+                            android:layout_gravity="center"
+                            android:text="@string/connect"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/skip_full"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/skip"
+                        android:textColor="@color/text_grey"
+                        android:textAllCaps="true"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_body_wizard"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- CONTENT LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/exchange_manual_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/on_boarding_exchange_manually_server"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tact_edit_text"
+                    android:padding="0dp">
+
+                    <EditText
+                        android:id="@+id/exchange_manual_input"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:editable="true"
+                        android:hint="@string/server"
+                        android:lines="1"/>
+
+                    <Button
+                        android:id="@+id/next_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/orange_btn"
+                        android:text="@string/next"
+                        android:layout_marginRight="20dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/skip"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/skip"
+                    android:textColor="@color/text_grey"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

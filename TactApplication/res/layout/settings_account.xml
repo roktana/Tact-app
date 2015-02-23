@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/action_bar_grey"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/settings_actionbar" android:id="@+id/setting_main_actionbar" />
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="drawer_clickable_item"
+                android:id="@+id/change_password_field"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_action_bar">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="@dimen/standard_action_bar"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:src="@drawable/settings_password"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/change_password"
+                        android:textColor="@color/grey_mid"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <include layout="@layout/divider_layout" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="drawer_clickable_item"
+                android:id="@+id/signout_field"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_action_bar">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="@dimen/standard_action_bar"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:src="@drawable/settings_logout"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/signout"
+                        android:textColor="@color/grey_mid"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/divider_layout" />
+        <include layout="@layout/divider_layout" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/padding_standard"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/delete_account_btn"
+            android:text="@string/delete_account"
+            style="@style/tact_red_button"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="@string/note_delete_account"
+            android:textColor="@color/grey_mid"
+            android:textSize="@dimen/l_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

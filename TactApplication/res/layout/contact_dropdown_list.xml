@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:id="@+id/contact_dropdown_layout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/no_contacts_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No contacts found."
+            android:textStyle="italic"
+            android:textColor="@color/light_gray"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            />
+
+
+        <ListView
+            android:id="@+id/list_view_queried_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/divider_line"
+            android:dividerHeight="1dp"
+            android:descendantFocusability="blocksDescendants" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_on_salesforce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search on Salesfroce"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:background="@color/mid_grey"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

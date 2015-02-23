@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/on_boarding_local_sources"
+    android:background="@drawable/on_boarding_bg">
+
+    <LinearLayout
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/error_text"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red"
+                android:text="Hint Error Test"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:id="@+id/enter_data_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/incorrect_login_error"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/red"
+                        android:text="@string/login_email_error"
+                        android:padding="10dp"/>
+
+                    <EditText
+                        android:id="@+id/exchange_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:textColorHint="@color/light_gray"
+                        android:layout_marginBottom="5dp"/>
+                    <include layout="@layout/divider_layout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/exchange_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:background="@null"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="@color/light_gray"
+                        android:inputType="textPassword"
+                        android:maxLines="1"/>
+                    <include layout="@layout/divider_layout" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+
+                    <include layout="@layout/connect_skip_layout"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/connect_manually"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/connect_manually"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/success_connection_block"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="top">
+
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/already_connected_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/exchange_big_logo"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/onboarding_already_connected" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/success"-->
+                        <!--style="@style/green_btn"-->
+                        <!--android:layout_marginBottom="10dp"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/general_connect_btn"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@null"-->
+                        <!--android:text="@string/text_continue"-->
+                        <!--android:textColor="@color/text_grey"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:textSize="12sp"/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/onboarding_contact_us" />
+    </LinearLayout>
+
+</RelativeLayout>

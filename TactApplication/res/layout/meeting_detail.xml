@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.tactile.tact.utils.TactParallaxScrollView
+        android:id="@+id/meeting_scroll_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:paddingTop="@dimen/standard_action_bar"
+            android:background="@color/clear_blue_gray"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/log_item"
+                android:background="@color/clear_blue_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/meeting_log_item_detail_header"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="16dp"
+                    android:background="@drawable/box_shadow"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical"
+                    android:id="@+id/meeting_details_log_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/log_list_item" android:id="@+id/log1_layout"/>
+                    <include layout="@layout/log_list_item" android:id="@+id/log2_layout"/>
+
+
+                    <include layout="@layout/log_list_item" android:id="@+id/all_logs_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/event_description_layout"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/xl_text_size"
+                        android:id="@+id/event_description"
+                        android:autoLink="web"
+                        android:text="Dear Gregor,\n\nLoren ipsum dolot sit amet, conscectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magn and some text goes..."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/event_description_see_more"
+                        android:textColor="@color/orange_btn"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/meeting_log_see_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <include layout="@layout/divider_layout" />
+
+
+                <LinearLayout
+                    android:id="@+id/event_invitees"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/xl_text_size"
+                        android:text="@string/meeting_log_invitees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.tactile.tact.utils.TactParallaxScrollView>
+    <include layout="@layout/fragment_action_bar" android:id="@+id/meeting_action_bar"/>
+    <include layout="@layout/fab_event_detail"/>
+</FrameLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/on_boarding_local_sources"
+    android:background="@drawable/on_boarding_bg">
+
+    <LinearLayout
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <!-- CONTENT LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/local_sources_legend"
+                        android:gravity="center"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/xxl_text_size"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="@color/divider_line"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/contacts_container"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/checkbox_on_boarding_grey"
+                            android:button="@null"
+                            android:id="@+id/contact_switch"/>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/contacts_icon_on_boarding"/>
+
+                        <TextView
+                            android:id="@+id/contacts_text_view"
+                            android:textColor="@color/text_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/contacts"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/xl_text_size"
+                            android:paddingLeft="10dp"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="@color/divider_line"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/meetings_container"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/checkbox_on_boarding_grey"
+                            android:button="@null"
+                            android:id="@+id/calendar_switch"/>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calendar_icon_on_boarding"/>
+
+                        <TextView
+                            android:id="@+id/meetings_text_view"
+                            android:textColor="@color/text_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/meetings"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/xl_text_size"
+                            android:paddingLeft="10dp"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/divider_line"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"/>
+
+                    <include layout="@layout/continue_skip_layout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/onboarding_contact_us" />
+
+    </LinearLayout>
+
+</RelativeLayout>

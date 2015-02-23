@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.tactile.tact.utils.TactParallaxScrollView
+        android:id="@+id/contact_details_scroll_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/contact_details_header" />
+
+            <LinearLayout
+                android:id="@+id/contact_details_total_fields_container"
+                android:background="@color/white"
+                android:paddingTop="32dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.tactile.tact.utils.TactParallaxScrollView>
+    <include layout="@layout/fragment_action_bar" android:id="@+id/contact_details_action_bar" />
+</FrameLayout>

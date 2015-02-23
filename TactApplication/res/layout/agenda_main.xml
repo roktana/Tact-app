@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#F2F2F2">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ToggleButton
+            android:id="@+id/earlier_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:textOn="@string/earlier"
+            android:textOff="@string/earlier"
+            android:textColor="@color/contacts_filter_button_text"
+            android:textAllCaps="true"
+            style="@style/ContactsFilterButton" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/yesterday_btn"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/contacts_filter_button_text"
+                style="@style/ContactsFilterButton" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/today_btn_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"
+                    android:gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/orange_btn"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/today_btn"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:textStyle="bold"
+                    android:checked="true"
+                    android:textColor="@color/contacts_filter_button_text"
+                    style="@style/ContactsFilterButton"/>
+
+            </RelativeLayout>
+
+
+            <ToggleButton
+                android:id="@+id/tomorrow_btn"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/contacts_filter_button_text"
+                style="@style/ContactsFilterButton" />
+
+            </LinearLayout>
+
+
+        <ToggleButton
+            android:id="@+id/later_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:textOn="@string/later"
+            android:textOff="@string/later"
+            android:textColor="@color/contacts_filter_button_text"
+            android:textAllCaps="true"
+            style="@style/ContactsFilterButton" />
+
+    </RadioGroup>
+
+    <TextView android:layout_width="match_parent" android:layout_height="2dp" android:background="#BBB"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/agenda_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

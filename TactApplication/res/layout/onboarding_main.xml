@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- TITLE BAR INCLUDE -->
+    <include android:id="@+id/title_bar_include" layout="@layout/on_boarding_base_action_bar"/>
+
+    <!-- BREADCRUMB LINE -->
+
+    <LinearLayout
+        android:background="@color/light_light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+        <RelativeLayout
+            android:id="@+id/breadcrumb_progress"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/clear_blue_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/breadcrumb_remaining"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+            <LinearLayout
+                android:background="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:background="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"/>
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/onboarding_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

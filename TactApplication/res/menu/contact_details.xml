@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_add_note"
+          android:icon="@drawable/ic_add_note"/>
+</menu>

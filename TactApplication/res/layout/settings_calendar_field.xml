@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:focusableInTouchMode="false"
+        android:id="@+id/settings_exchange_field"
+        style="@style/log_layout_field"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:id="@+id/calendar_name"
+                android:textSize="@dimen/xxl_text_size"
+                android:textColor="@color/dark_grey"
+                android:text="@string/placeholder_calendar_name"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_marginRight="16dp"
+            android:layout_width="@dimen/small_asset_dimension"
+            android:layout_height="@dimen/small_asset_dimension"
+            android:background="@drawable/checkbox_settings"
+            android:button="@null"
+            android:id="@+id/check_box_calendar_selected"/>
+
+    </LinearLayout>
+    <include layout="@layout/divider_layout"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:visibility="visible"
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <Button
+        android:id="@+id/general_connect_btn"
+        android:text="@string/connect"
+        style="@style/tact_orange_button"/>
+
+    <Button
+        android:text="@string/skip"
+        style="@style/tact_grey_button"
+        android:id="@+id/general_connect_skip_btn"/>
+
+</LinearLayout>

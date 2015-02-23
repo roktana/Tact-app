@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="@color/contacts_filter_button_text_active">
+
+        <ImageView
+            android:id="@+id/new_edit_note_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/x_field_icon"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="18dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="New Note"
+            android:textSize="20dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:id="@+id/new_edit_note_header_title"
+            android:gravity="center_horizontal"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:id="@+id/new_edit_note_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="17dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:id="@+id/note_new_related_row">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/relatedTo_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Related To"
+                    android:textSize="17sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:id="@+id/new_edit_note_contact_layout"
+                    android:gravity="center_vertical"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:text="Contact"
+                        android:id="@+id/new_edit_note_contact_name"
+                        android:textColor="@color/light_gray"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_forward"
+                        android:layout_width="0dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp">
+                <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="#BBB"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/title_new_edit_note_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Title"
+                    android:textSize="17sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/DefaultEditTextStyle"
+                        android:textSize="17sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:text="None"
+                        android:id="@+id/new_edit_note_title"
+                        android:textColor="@color/light_gray"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+            <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="#BBB"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="7.4"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/body_new_edit_note_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:paddingTop="3dp"
+                android:weightSum="4"
+                android:layout_height="fill_parent">
+
+                <EditText
+                    android:id="@+id/new_edit_note_body"
+                    android:gravity="top"
+                    style="@style/DefaultEditTextStyle"
+                    android:textSize="17sp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/light_gray"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:background="@color/very_light_blue">
+
+            <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/black"/>
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Sync to Salesforce"/>
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

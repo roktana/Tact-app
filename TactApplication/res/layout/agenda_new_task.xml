@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_new_task_body"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_white_gray"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:id="@+id/new_task_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/tact_note_title_border"/>
+
+
+        <!-- NOTE TEXT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/white_box_radius"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/task_icon"
+                    android:layout_width="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30sp"
+                    android:src="@drawable/check_box_field" />
+
+                <EditText
+                    android:text="Title"
+                    android:id="@+id/task_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:inputType="textFilter"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="vertical"/>
+
+                </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/task_date_icon"
+                    android:layout_width="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30sp"
+                    android:src="@drawable/clock_grey" />
+
+                <TextView
+                    android:text="Due at"
+                    android:editable="false"
+                    android:id="@+id/task_date"
+                    android:layout_marginTop="22sp"
+                    android:layout_marginBottom="22sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="vertical"/>
+
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/agenda_task_contact_field"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_not_contact_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/task_contact_icon"
+                        android:layout_width="30sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="30sp"
+                        android:src="@drawable/ic_person_avatar_small" />
+
+                    <TextView
+                        android:text="Contact"
+                        android:id="@+id/task_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_gray"
+                        android:maxLines="1"
+                        android:layout_marginTop="22sp"
+                        android:layout_marginBottom="22sp"
+                        android:editable="false"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:scrollbars="vertical"/>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12sp"
+                    android:layout_marginBottom="12sp"
+                    android:id="@+id/layout_contact_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include  layout="@layout/contact_layout_part" android:id="@+id/layout_contact_details" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:text="Select Opportunity"
+                    android:id="@+id/task_opportunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Rendered elements by Note Type -->
+        <LinearLayout
+            android:id="@+id/behavior_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/white_box_radius"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="10sp"
+                    android:id="@+id/task_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/note_grey" />
+
+                <EditText
+                    android:id="@+id/task_text"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textColor="@color/black"
+                    android:maxLines="5"
+                    android:paddingLeft="10dp"
+                    android:scrollbars="vertical"
+                    android:maxHeight="80dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- LOG TO SALEFORCE -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_to_salesforce"
+                android:textSize="@dimen/xl_text_size"
+                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <!-- action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <Button
+                android:id="@+id/discard_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/discard"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/buttom_smoth_orange"
+                android:drawableRight="@color/transparent"
+                android:translationX="-1dp"
+                android:textAllCaps="true"
+                android:paddingRight="1dp"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:background="@color/buttom_smoth_orange"
+                android:drawableRight="@color/transparent"
+                android:translationX="1dp"
+                android:paddingRight="1dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

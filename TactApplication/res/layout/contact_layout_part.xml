@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/layout_contact_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contact_icon"
+            style="@style/contact_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_contact_name"
+                android:text="Contact name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:id="@+id/textview_contact_detail"
+                android:text="Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_contact_action"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/next_field_icon"
+                android:src="@drawable/next_icon"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <ImageView
+                android:id="@+id/x_field_icon"
+                android:src="@drawable/x_field_icon"
+                android:layout_gravity="right"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

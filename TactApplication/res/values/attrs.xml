@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="ProfileIconView">
+        <attr name="iconSize" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TactCustomSpinner">
+        <attr name="popupWindowPosition" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="in_place" value="2"/>
+        </attr>
+        <attr name="spinnerType" format="enum">
+            <enum name="dialog" value="0" />
+            <enum name="window" value="1" />
+            <enum name="menu" value="2" />
+        </attr>
+        <attr name="xPosition" format="integer" />
+        <attr name="yPosition" format="integer" />
+        <attr name="windowLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color|reference"/>
+        <attr name="fillColor" format="color|reference"/>
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="circleGap" format="dimension"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/settings_actionbar" />
+        <include layout="@layout/divider_layout" />
+        
+        <LinearLayout
+            android:layout_marginTop="@dimen/padding_standard"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_standard"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/xl_text_size"
+                android:text="@string/connected_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/salesforce_username"
+                android:textColor="@color/dark_grey"
+                android:textStyle="italic"
+                android:textSize="@dimen/xl_text_size"
+                android:text="@string/test_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/padding_standard"
+            android:paddingLeft="@dimen/padding_standard"
+            android:paddingBottom="@dimen/padding_standard"
+            android:paddingRight="@dimen/padding_standard"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/disconnect_btn"
+                android:text="@string/disconnect_account"
+                style="@style/tact_grey_button"/>
+
+            <TextView
+                android:id="@+id/disconnect_salesforce_note"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="@string/disconnect_salesforce_note"
+                android:textColor="@color/grey_mid"
+                android:textSize="@dimen/l_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

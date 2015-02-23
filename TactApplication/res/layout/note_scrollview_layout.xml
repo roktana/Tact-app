@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tactile.tact.utils.TactParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/task_scroll_view_layout"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/tact_violet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_action_bar_3x">
+            <include layout="@layout/note_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/standard_action_bar"/>
+        </LinearLayout>
+        <include layout="@layout/note_data_layout" />
+
+    </LinearLayout>
+
+</com.tactile.tact.utils.TactParallaxScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/on_boarding_dialog_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/confirm_remove_account_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnect_account"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:textSize="30dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnect_info"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textSize="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/delete_all_data_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disconnect_delete_all"
+                style="@style/grey_btn"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/kepp_all_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/grey_btn"
+                android:text="@string/disconnect_keep"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/do_not_disconnect_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/orange_btn"
+                android:text="@string/disconnect_do_not"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

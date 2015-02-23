@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/settings_actionbar" />
+        <include layout="@layout/divider_layout" />
+
+        <LinearLayout
+            android:padding="@dimen/padding_standard"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:id="@+id/enter_data_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/incorrect_login_error"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/red"
+                    android:text="@string/login_email_error"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/reconnect_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:textColorHint="@color/light_gray"
+                    android:layout_marginBottom="5dp"/>
+                <include layout="@layout/divider_layout" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reconnect_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:background="@null"
+                    android:layout_marginBottom="5dp"
+                    android:textColorHint="@color/light_gray"
+                    android:inputType="textPassword"
+                    android:maxLines="1"/>
+                <include layout="@layout/divider_layout" />
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:gravity="center_horizontal"
+                android:visibility="visible"
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+                <Button
+                    android:id="@+id/general_connect_btn"
+                    android:text="@string/connect"
+                    style="@style/tact_orange_button"/>
+
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

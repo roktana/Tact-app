@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/entire_actionBar_layout">
+
+    <LinearLayout
+        android:background="@color/action_bar_grey"
+        android:id="@+id/actionBar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:padding="16dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/back_arrow_orange"
+                android:id="@+id/menu_button"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/header_linear_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:textColor="@color/action_bar_orange"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/fragments_title_text"
+                android:text="@string/standard_title"
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

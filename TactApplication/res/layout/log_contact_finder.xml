@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/contact_action_bar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_action_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/contact_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/no_contact_textview"
+            android:textSize="@dimen/xl_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            android:text="@string/contact_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.tactile.tact.views.CustomViewPager
+            android:id="@+id/contacts_list_pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/action_bar" android:id="@+id/log_contact_finder_action_bar"/>
+
+</FrameLayout>

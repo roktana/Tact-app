@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:id="@+id/entire_actionBar_layout">
+
+    <LinearLayout
+        android:id="@+id/fragment_actionBar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_actionBar_menu_button_layout"
+            android:padding="16dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/fragment_menu_button"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_header_linear_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/fragment_actionBar_title_text"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/fragments_title_text"
+                android:text=""
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/fragment_actionBar_secondary_button_2"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imageview_secondary_2"
+                android:layout_gravity="center"
+                android:padding="14dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/fragment_actionBar_secondary_button_1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imageview_secondary_1"
+                android:padding="14dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="14dp"
+            android:id="@+id/fragment_actionBar_option_button_layout"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:visibility="visible"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:id="@+id/fragment_option_menu_btn"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

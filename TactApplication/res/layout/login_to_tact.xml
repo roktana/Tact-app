@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/login_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- TITLE BAR INCLUDE -->
+    <include android:id="@+id/title_bar_include" layout="@layout/on_boarding_base_action_bar"/>
+    <include android:id="@+id/text_part" layout="@layout/login_text_part" />
+</LinearLayout>

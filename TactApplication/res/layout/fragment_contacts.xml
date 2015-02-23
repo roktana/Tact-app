@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/contact_search_hint"
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/contact_filter_all_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/contact_filter_all"
+            android:textOff="@string/contact_filter_all"
+            android:textColor="@color/contacts_filter_button_text"
+            android:checked="true"
+            style="@style/ContactsFilterButton" />
+
+        <ToggleButton
+            android:id="@+id/contact_filter_recent_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/contact_filter_recent"
+            android:textOff="@string/contact_filter_recent"
+            android:textColor="@color/contacts_filter_button_text"
+            style="@style/ContactsFilterButton" />
+
+        <ToggleButton
+            android:id="@+id/contact_filter_starred_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/contact_filter_starred"
+            android:textOff="@string/contact_filter_starred"
+            android:textColor="@color/contacts_filter_button_text"
+            style="@style/ContactsFilterButton" />
+    </RadioGroup>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contact_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

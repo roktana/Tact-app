@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true">
+    <shape>
+        <corners android:radius="10dp" />
+        <gradient
+            android:startColor="@color/on_boarding_dialog_confirm_btn"
+            android:endColor="#808B9A"
+            android:angle="270"/>
+    </shape>
+
+</item>
+
+<item android:state_enabled="false">
+    <shape>
+        <corners android:radius="10dp" />
+        <solid android:color="#AAAEB3" />
+    </shape>
+</item>
+
+<!-- DEFAULT STATE -->
+<item>
+    <shape>
+        <corners android:radius="10dp" />
+        <gradient
+            android:startColor="#808B9A"
+            android:endColor="@color/on_boarding_dialog_confirm_btn"
+            android:angle="270"/>
+    </shape>
+</item>
+
+</selector>

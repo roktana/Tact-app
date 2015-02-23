@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="16dp"
+            android:background="@drawable/contact_selection_background"
+            android:id="@+id/log_contact_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.tactile.tact.views.ProfileIconView xmlns:tact="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/log_contact_details_icon_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tact:iconSize="small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:textSize="@dimen/xl_text_size"
+                            android:text=""
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/dark_grey"
+                            android:id="@+id/log_contact_name_text_view"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:id="@+id/log_company_name_text_view"
+                            android:textSize="@dimen/l_text_size"
+                            android:textColor="@color/mid_grey"
+                            android:text=""
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/log_selected_contact_tick"
+                    android:visibility="gone"
+                    android:src="@drawable/contacts_selected_check"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                </LinearLayout>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

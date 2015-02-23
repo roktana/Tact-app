@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">Tact</string>
+    <string name="app_package">com.tactile.tact</string>
+
+    <string-array name="drawer_menu_array">
+        <item>Profile</item>
+        <item>Help</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="word_list">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <!-- Password Strings -->
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="login_with_email">Log In using a registered Email</string>
+    <string name="log_me_in">Log In</string>
+    <string name="get_me_started">Create Account</string>
+    <string name="forgot_password">Forgot Your Password?</string>
+    <string name="create_password">Create a password (8 characters minimum)</string>
+    <string name="confirm_a_password">Confirm a password</string>
+    <string name="min_password_string">Password must have minimum of 8 characters.</string>
+    <string name="reset_password_hint">Enter E-mail address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="reset_password_legend">Enter your email to receive instruction for resetting your password</string>
+    <string name="login_server_error">Uh oh! Tact was unable to connect to server. Please try again.</string>
+    <string name="login_email_error">Uh oh! Your email and/or password don\'t match our records. Please try again.</string>
+    <string name="login_email_format_error">Uh oh! Your email has incorrect format.</string>
+    <string name="login_email_error_empty_string">Email and password are both required. Please try again.</string>
+    <string name="connect_to_email">Connect More Sources</string>
+    <string name="skip_to_registration">Skip to Registration</string>
+    <string name="logout_sf_button">Log Out of SF</string>
+    <string name="logout_gmail_button">Log out of G+</string>
+    <string name="connect_to_exchange">Connect Exchange</string>
+    <string name="connect_to_linkedin">Connect LinkedIn</string>
+    <string name="exchange_email">Exchange Email</string>
+    <string name="enter_exchange_info">Enter Your Exchange Info</string>
+    <string name="register_me">Register</string>
+    <string name="type_in_a_password">Type in a password</string>
+    <string name="type_in_a_username">Type in a username</string>
+    <string name="username">Tact username</string>
+    <string name="password_repeat">Repeat</string>
+    <string name="passwords_dont_match">Passwords don\'t match. Try Again</string>
+    <string name="incorrect_login_error">Incorrect user/pass. Please try again.</string>
+    <string name="invalid_email">Invalid Email. Please try again.</string>
+    <string name="reset_password_success">Reset Password Request was successfully sent to our server</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="redeem_cookie">…on a successful fake-registration. You may now redeem a cookie from Prem\@Tactile</string>
+    <string name="start_over">Start Over</string>
+    <string name="in_home_now">…You\'re now Logged in. This is a placeholder screen for the Tact app home. Conversations, Agenda, Contacts, Notes etc.</string>
+
+    <!-- SFLogin Strings - Maybe be deleted later -->
+    <string name="logout_button">Log Out</string>
+    <string name="account_type">com.tactile.tact.login</string>
+
+    <!-- GPlus String -->
+    <string name="status_sign_in_required">Sign-in required</string>
+    <string name="status_sign_in_error">Error signing in: %s</string>
+    <string name="status_loading">Loading…</string>
+    <string name="status_signing_in">Signing in with Google+…</string>
+    <string name="status_signed_out">Signed out</string>
+    <string name="status_revoke_access">Revoked access</string>
+    <string name="status_revoke_access_error">Error revoking access: %s</string>
+    <string name="signed_in_as">Signed in as %s</string>
+
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="profile_picture">User\'s profile picture.</string>
+
+    <!-- Home -->
+    <string name="tab">home screen tab</string>
+    <string name="agenda">Agenda</string>
+    <string name="conversations">Conversations</string>
+    <string name="calendar">Calendar</string>
+    <string name="tasks">Tasks</string>
+
+    <!-- Contacts -->
+    <string name="placeholder_icon_initials">JW</string>
+    <string name="contact_search_hint">Search all contacts</string>
+    <string name="contact_filter_all">All</string>
+    <string name="contact_filter_starred">Starred</string>
+    <string name="contact_filter_recent">Recent</string>
+    <string name="contact_not_found">No contacts found</string>
+
+    <string name="edit_text">Edit</string>
+    <string name="note">Note</string>
+    <string name="log">Log</string>
+
+    <!-- Contact Details -->
+    <string name="default_contact_details_label"></string>
+    <string name="contact_details_title_placeholder"></string>
+    <string name="contact_details_subtitle_placeholder"></string>
+    <string name="contact_details_conversations">CONVERSATIONS</string>
+    <string name="contact_details_no_conversations">No Conversations</string>
+    <string name="contact_details_tasks">TASKS</string>
+    <string name="contact_details_no_tasks">No Tasks</string>
+    <string name="contact_details_connect_linkedin">CONNECT LINKEDIN</string>
+    <string name="contact_details_details">DETAILS</string>
+    <string name="contact_details_no_details">No Details</string>
+    <string name="new_note_hint_string">Type %s</string>
+    <string name="contact_details_mobile">MOBILE</string>
+    <string name="contact_details_work">WORK</string>
+    <string name="contact_details_personal">OTHER</string>
+    <string name="contact_details_home">HOME</string>
+    <string name="contact_details_other">OTHER</string>
+    <string name="contact_details_twitter">TWITTER</string>
+    <string name="contact_details_facebook">FACEBOOK</string>
+    <string name="contact_details_linkedin">LINKEDIN</string>
+    <string name="contact_details_fax">"FAX"</string>
+    <string name="contact_details_industry">INDUSTRY</string>
+    <string name="contact_details_annual_revenue">ANNUAL REVENUE</string>
+    <string name="contact_details_number_of_employees">NUMBER OF EMPLOYEES</string>
+    <string name="contact_details_ticker_symbol">TICKER SYMBOL</string>
+    <string name="contact_details_address">ADDRESS</string>
+    <string name="contact_details_website">WEBSITE"</string>
+    <string name="send_email">Send Email</string>
+    <string name="contact_details_detail_placeholder">+1 (555) 123 4567</string>
+    <string name="plus_button">+</string>
+    <string name="employes">Employes</string>
+
+    <!-- NOTES -->
+    <string name="capture_note">CAPTURE %s</string>
+    <string name="create_followup_task">Create follow up task</string>
+    <string name="log_to_salesforce">Logging to Salesforce</string>
+    <string name="discard">discard</string>
+    <string name="save">save</string>
+
+    <!-- ON BOARDING -->
+
+    <string name="onboarding_title_email_sources">Connect to Email</string>
+    <string name="connect_gmail_title">Connect to Gmail</string>
+    <string name="connect_exchange_title">Connect to Exchange</string>
+    <string name="onboarding_title_salesforce">Connect to Salesforce</string>
+    <string name="tact_username_title">Tact Username</string>
+    <string name="tact_password_title">Set a password</string>
+    <string name="server">Server</string>
+    <string name="on_boarding_salesforce_legend">Sync your contacts, accounts, tasks, events, and notes from Salesforce</string>
+    <string name="local_sources_legend">Sync phone contacts and meetings</string>
+    <string name="email_sources_legend">What do you use for email?</string>
+    <string name="connect_gmail_legend">Connect to Gmail to sync your email and contacts</string>
+    <string name="connect_exchange_legend">Enter your Exchange info</string>
+    <string name="tact_username_legend">Enter an email address</string>
+    <string name="tact_password_legend">Secure your account with a password</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="local_sources_error">"Error sending the device information. Please press continue button again, thanks."</string>
+    <string name="have_questions">Have questions?</string>
+    <string name="feel_free_close_tact">Feel free to close Tact for now, this may take a while.</string>
+    <string name="notify_finished">We\'ll notify you when finished</string>
+    <string name="syncing">Syncing</string>
+    <string name="create_account">Create Account</string>
+    <string name="select_one_email_resource">Select at least 1 e-mail source in order to proceed</string>
+    <string name="salesforce_server_error">Your Salesforce account has not been synchronized. Please try again.</string>
+    <string name="salesforce_account_error">Your Salesforce account is not configured to connect external apps.</string>
+
+    <string-array name="local_sources_dialogs">
+        <item>Syncing local contacts provides the best experience.</item>
+        <item>Syncing the local calendar is required for capturing your important meetings.</item>
+    </string-array>
+
+    <string name="text_continue">continue</string>
+    <string name="email_address">Email address</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="next">next</string>
+    <string name="failed">failed</string>
+    <string name="retry">retry</string>
+    <string name="skip">skip</string>
+    <string name="gmail">Gmail</string>
+    <string name="salesforce">Salesforce</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="contacts">Contacts</string>
+    <string name="contact">Contact</string>
+    <string name="set_password">Set password</string>
+    <string name="exchange">Exchange</string>
+    <string name="success">success</string>
+    <string name="connect">connect</string>
+    <string name="connect_manually"><u>Connect manually</u></string>
+    <string name="remind_me_later">remind me later</string>
+    <string name="not_match_passwords">The passwords don\'t match.</string>
+    <string name="password_length_error">The password must have more than 5 characters.</string>
+    <string name="password_blank_error">The password must not have blanks.</string>
+    <string name="email_error">The Email Address is required.</string>
+    <string name="email_format_error">The Email has incorrect format.</string>
+    <string name="tact_login_connection_start">Tact login connection started.</string>
+    <string name="tact_login_connection_finish">Tact login connection finished.</string>
+    <string name="tact_login_connection_error">Tact login connection finished with errors.</string>
+    <string name="on_boarding_flow_finished">OnBoarding flow finished.</string>
+    <string name="connect_exchange_success">Your Exchange info</string>
+    <string name="email">Email</string>
+    <string name="get_local_sources">Pick Local Sources</string>
+    <string name="connect_contacts">Connect Contacts</string>
+    <string name="exchange_wrong_login">Exchange email or password is incorrect.</string>
+    <string name="exchange_unable_login">Unable to connect.</string>
+    <string name="exchange_error_message">An error has occurred</string>
+    <string name="_">_</string>
+    <string name="message_title_confirm">Confirm</string>
+    <string name="message_title_info">Information</string>
+    <string name="message_title_error">Error</string>
+    <string name="message_logout_confirmation">Are you sure you want to logout?</string>
+    <string name="message_button_yes">Yes</string>
+    <string name="message_button_no">No</string>
+    <string name="message_button_ok">OK</string>
+    <string name="message_button_close">Close</string>
+    <string name="message_app_internal_error">Application error. Please try again.</string>
+    <string name="notifications">Notifications</string>
+    <string name="data_sources">Data Sources</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="account">Account</string>
+    <string name="change_password">Change Password</string>
+    <string name="logged_in_as_user">LOGGED IN AS %s</string>
+    <string name="settings">Settings</string>
+    <string name="reminder_notifications">Reminder Notifications</string>
+    <string name="event_meeting">Meeting</string>
+    <string name="capture_meetings">Capture Meetings</string>
+    <string name="salesforce_tasks">Salesforce Tasks</string>
+    <string name="salesforce_events">Salesforce Events</string>
+    <string name="todays_tasks">Today\'s Tasks</string>
+    <string name="show_on_tacts_icon">Show on Tact\'s Icon</string>
+    <string name="receive_reminders_legend">Receive reminders to capture meetings when they end or reminders for Salesforce tasks and events that have a reminder tie set.</string>
+    <string name="sync_data_now">Sync Data Now</string>
+    <string name="last_synced_at">Last synced at %s</string>
+    <string name="remote_sources">Remote Sources</string>
+    <string name="local_sources">Local Sources</string>
+    <string name="account_type_">Account Type</string>
+    <string name="contacts_visited">Contacts Visited</string>
+    <string name="app_version">App Version</string>
+    <string name="note_delete_account">Deleting your account is irreversible.</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="earlier">Earlier</string>
+    <string name="later">later</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="new_task">New Task</string>
+    <string name="no_events_scheduled">No events scheduled</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="notes">Notes</string>
+    <string name="connection_error">You\'re not connected to Internet. Please connect to use the application.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_calendars_to_sync">Choose your calendars for syncing</string>
+    <string name="calendar_descritpion_msg">Calendar Description</string>
+    <string name="calendar_msg">Calendar</string>
+    <string name="connect_calendars">Connect to your Calendar</string>
+    <string name="show_all_calendars">Show All</string>
+    <string name="hide_all_calendars">Hide All</string>
+    <string name="done_question">DONE</string>
+    <string name="do_question">QUESTION?</string>
+    <string name="question_subject">Question about Tact</string>
+    <string name="connection_trouble">A connection failure has occurred. Please verify your internet connection.</string>
+    <string name="connect_to_salesforce">Connect Salesforce</string>
+    <string name="connect_to_google">Connect Google</string>
+    <string name="disconnect_account">Disconnect</string>
+    <string name="disconnect_info">Choose what you want to do with this source\'s data. Keep My Data will keep your contacts and captured items.\n\nContact support\@tactile.com with questions.</string>
+    <string name="disconnect_delete_all">Delete All Data</string>
+    <string name="disconnect_keep">Keep My Data</string>string
+    <string name="disconnect_do_not">Do Not Disconnect</string>
+    <string name="confirm_resync">Please resync your data to continue using Tact.</string>
+    <string name="confirm_resync_dialog">Source Added</string>
+    <string name="confirm_resync_dialog_cancel">Not Now</string>
+    <string name="confirm_resync_dialog_ok">Resync</string>
+    <string name="no_calendars">No calendars on your device</string>
+    <string name="registration_repeated_email">This email is already registered with us. If you are having trouble signing in, use the forgot password link or email us at support\@tactapp.com.</string>
+    <string name="initial_sync_service_name">TactInitialSyncService</string>
+    <string name="cudl_sync_service_name">TactCUDLSyncService</string>
+    <string name="logout_message">IF YOU LOGOUT YOU WILL LOSE...</string>
+    <string name="timeout_message">The page cannot be displayed. Cannot find server or DNS Error. Do you want to retry?</string>
+    <string name="sync_error">Synchronization error. Please verify your internet connection. Do you want to retry?</string>
+    <string name="all_set_connected">All set &amp; connected!</string>
+
+    <!-- Drawer menu -->
+    <string name="drawer_mail">Mail</string>
+    <string name="drawer_calendar">Calendar</string>
+    <string name="drawer_contacts">Contacts</string>
+    <string name="drawer_notebook">Notebook</string>
+    <string name="drawer_opportunities">Opportunities</string>
+    <string name="drawer_sync">Sync Now</string>
+    <string name="signout">Sign Out</string>
+
+    <!-- Drawer coming soon -->
+    <string name="drawer_mail_coming">Mail (coming soon)</string>
+    <string name="drawer_calendar_coming">Calendar (coming soon)</string>
+    <string name="drawer_contacts_coming">Contacts (coming soon)</string>
+    <string name="drawer_notebook_coming">Notebook</string>
+    <string name="drawer_opportunities_coming">Opportunities (coming soon)</string>
+    <string name="drawer_sync_coming">Sync Now (coming soon)</string>
+    <string name="signout_coming">Sign Out (coming soon)t</string>
+
+
+
+    <!-- Logging -->
+    <string name="logging_salesforce_title">Logging to Salesforce</string>
+    <string name="log_description_text">Description</string>
+    <string name="due_date_text">Due Date</string>
+    <string name="related_to">Related To</string>
+    <string name="log_subject_text">Subject</string>
+    <string name="log_select_contacts">Select Contact</string>
+    <string name="log_select_companies">Select Company</string>
+    <string name="log_contact_required_error">Contact or Relate to fields are required</string>
+
+
+    <!-- Meetings -->
+    <string name="meeting_log_all">See all logs</string>
+    <string name="meeting_log_see_more">See More</string>
+    <string name="meeting_log_see_less">See Less</string>
+    <string name="meeting_log_invitees">Invitees</string>
+    <string name="meetings">Meetings</string>
+    
+    <string name="standard_title">Title</string>
+    
+    <!-- Tasks -->
+    <string name="tasks_salesforce_task">Salesforce Task</string>
+    <string name="tasks_tact_task">Tact Private Task</string>
+    <string name="create_task">Create Task</string>
+    <string name="task_details">Task Details</string>
+    <string name="edit_task">Edit Task</string>
+    
+    <!-- Notes -->
+    <string name="create_note">Create Note</string>
+    <string name="note_details">Note Details</string>
+    <string name="body">Body</string>
+    <string name="saved_salesforce_note">Save as Salesforce Note</string>
+    <string name="edit_note">Edit Note</string>
+    
+    <!-- Settings -->
+    <string name="message_us">Message Us</string>
+    <string name="signed_as">Signed in as </string>
+    <string name="tact_app_version">Tact App Version %s</string>
+    <string name="test_email">tact@test.com</string>
+    <string name="permission_required">Permission required</string>
+    <string name="calendars">Calendars</string>
+    <string name="calendar_place_holder">Work, Calendars, Holidays</string>
+    <string name="disconnect_salesforce_note">Disconnect to stop syncing and remove the data</string>
+    <string name="connected_as">Connected as</string>
+    <string name="connection_lost">Connection lost as</string>
+    <string name="reauthorize">Reauthorize</string>
+
+    <!-- Popup -->
+    <string name="delete_btn">Delete</string>
+    
+    <!-- Place Holders -->
+    <string name="placeholder_calendar_name">Calendar Name</string>
+    <string name="placeholder_contact">Gregor Clegane</string>
+    <string name="placeholder_notebook_date">Created on 01/24/15</string>
+    
+    <!-- Notebook -->
+    <string name="by_date_created">By Date Created</string>
+    <string name="by_contact_name">By Contact Name</string>
+    <string name="by_title">By Title</string>
+
+</resources>

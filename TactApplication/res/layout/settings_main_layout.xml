@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/action_bar_grey"
+    android:layout_height="match_parent">
+    
+    <include layout="@layout/settings_actionbar" android:id="@+id/setting_main_actionbar" />
+    <include layout="@layout/divider_layout" />
+    
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/data_sources_field"
+                style="drawer_clickable_item"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_action_bar">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="@dimen/standard_action_bar"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:src="@drawable/settings_sources"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/data_sources"
+                        android:textColor="@color/grey_mid"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <include layout="@layout/divider_layout" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_us_field"
+                style="drawer_clickable_item"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_action_bar">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="@dimen/standard_action_bar"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:src="@drawable/settings_feedback"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/message_us"
+                        android:textColor="@color/grey_mid"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <include layout="@layout/divider_layout" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_field"
+                style="drawer_clickable_item"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_action_bar">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="@dimen/standard_action_bar"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:src="@drawable/settings_account"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/account"
+                        android:textColor="@color/grey_mid"
+                        android:textSize="@dimen/xl_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/divider_layout" />
+        <include layout="@layout/divider_layout" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"            
+            android:paddingTop="@dimen/padding_standard"
+            android:paddingBottom="@dimen/padding_medium"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/xl_text_size"
+                android:textColor="@color/dark_grey"
+                android:text="@string/signed_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/signed_email"
+                android:textSize="@dimen/xl_text_size"
+                android:layout_marginLeft="3dp"
+                android:textStyle="italic"
+                android:textColor="@color/dark_grey"
+                android:text="@string/test_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:paddingRight="@dimen/padding_standard"
+            android:paddingLeft="@dimen/padding_standard"
+            android:paddingBottom="@dimen/padding_standard"
+            android:paddingTop="@dimen/padding_medium"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/app_version"
+                android:textSize="@dimen/xl_text_size"
+                android:textColor="@color/dark_grey"
+                android:text="@string/tact_app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

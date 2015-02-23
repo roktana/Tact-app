@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" style="@style/action_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:src="@drawable/back_icon"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="text hint"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/question_btn"
+            android:src="@drawable/question"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:scaleType="fitEnd"
+            android:adjustViewBounds="true"
+            android:onClick="doQuestion"/>
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/close_btn"
+            android:src="@drawable/x_field_icon"
+            android:layout_width="0dp"
+            android:layout_height="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:scaleType="fitEnd"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

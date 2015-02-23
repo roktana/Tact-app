@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/task_data_fields_layout"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    
+            <LinearLayout
+                android:paddingBottom="12sp"
+                android:focusableInTouchMode="false"
+                style="@style/log_layout_field"
+                android:clickable="true">
+    
+                <LinearLayout
+                    style="@style/log_layout_field"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/task_type_text_view"
+                        android:clickable="false"
+                        android:textColor="@color/mid_grey"
+                        style="@style/log_edit_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/tasks_salesforce_task"/>
+                    
+                    
+                    <ToggleButton
+                        android:id="@+id/tact_toggle_button_salesforce"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    
+    
+                </LinearLayout>
+                <include layout="@layout/divider_layout"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:paddingBottom="12sp"
+                android:focusableInTouchMode="false"
+                android:id="@+id/task_subject_layout"
+                style="@style/log_layout_field"
+                android:layout_height="wrap_content"
+                android:minHeight="70dp">
+                <TextView
+                    android:id="@+id/subject_title_soft"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/l_text_size"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/log_subject_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/subject_text_view"
+                    android:textColor="@color/mid_grey"
+                    style="@style/log_edit_text_item"
+                    android:text="@string/log_subject_text"/>
+                <EditText
+                    android:id="@+id/subject_edit_text"
+                    android:visibility="gone"
+                    style="@style/log_edit_text_item"
+                    android:textColor="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/divider_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+    
+            <com.tactile.tact.utils.TactCustomSpinner
+                android:focusableInTouchMode="false"
+                style="@style/log_layout_field"
+                android:id="@+id/task_due_date_spinner"
+                android:clickable="true"
+                app:popupWindowPosition="bottom"
+                app:windowLayout="@layout/note_date_dialog"
+                android:paddingBottom="12sp"
+                app:spinnerType="dialog">
+                <TextView
+                    android:id="@+id/due_date_title_soft"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/l_text_size"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/due_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/task_date_textview"
+                    android:textColor="@color/mid_grey"
+                    style="@style/log_edit_text_item"
+                    android:text="@string/due_date_text"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/duedate_text_view"
+                    android:textColor="@color/dark_grey"
+                    style="@style/log_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/divider_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.tactile.tact.utils.TactCustomSpinner>
+    
+            <LinearLayout
+                android:focusableInTouchMode="false"
+                android:id="@+id/task_contact_layout"
+                style="@style/log_layout_field">
+    
+                <TextView
+                    android:id="@+id/contact_title_soft"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/l_text_size"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    
+                    <TextView
+                        android:id="@+id/task_contact_name_text_view"
+                        android:textColor="@color/mid_grey"
+                        style="@style/log_edit_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/contact"/>
+    
+                    <ImageView
+                        android:paddingLeft="45dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="60dp"
+                        android:layout_height="15dp" />
+    
+                </LinearLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/contact_name_text_view"
+                    android:textColor="@color/dark_grey"
+                    style="@style/log_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+    
+                <include layout="@layout/divider_layout"
+                    android:id="@+id/task_contact_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:visibility="invisible"
+                    style="@style/log_text_required"
+                    android:id="@+id/task_contact_required_txt"
+                    android:text="@string/log_contact_required_error"/>
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:focusableInTouchMode="false"
+                android:id="@+id/task_related_to_layout"
+                style="@style/log_layout_field">
+    
+                <TextView
+                    android:id="@+id/related_to_title_soft"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/l_text_size"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/related_to"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    
+                    <TextView
+                        android:id="@+id/task_relate_to_name_text_view"
+                        android:textColor="@color/mid_grey"
+                        style="@style/log_edit_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/related_to"/>
+    
+                    <ImageView
+                        android:paddingLeft="45dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="60dp"
+                        android:layout_height="15dp" />
+    
+                </LinearLayout>
+    
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/related_to_name_text_view"
+                    android:textColor="@color/dark_grey"
+                    style="@style/log_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+    
+                <include layout="@layout/divider_layout"
+                    android:id="@+id/task_related_to_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    style="@style/log_text_required"
+                    android:id="@+id/task_related_to_required_txt"
+                    android:text="@string/log_contact_required_error"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+    
+            <LinearLayout
+                android:paddingBottom="12sp"
+                android:focusableInTouchMode="false"
+                android:id="@+id/task_description_layout"
+                style="@style/log_layout_field"
+                android:layout_height="wrap_content"
+                android:minHeight="70dp">
+                <TextView
+                    android:id="@+id/description_title_soft"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/l_text_size"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/log_description_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/description_text_view"
+                    android:textColor="@color/mid_grey"
+                    style="@style/log_edit_text_item"
+                    android:text="@string/log_description_text"/>
+                <EditText
+                    android:id="@+id/description_edit_text"
+                    android:visibility="gone"
+                    style="@style/log_edit_text_item"
+                    android:textColor="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/divider_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>

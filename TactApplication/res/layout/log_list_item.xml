@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/log_list_item_linear_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/log_list_item_title_text_view"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/dark_grey"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/log_list_item_contact_text_view"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/mid_grey"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/log_list_item_image"
+                android:layout_gravity="center"
+                android:src="@drawable/logdetail_log"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout"
+        android:id="@+id/log_item_divider"/>
+
+</LinearLayout>

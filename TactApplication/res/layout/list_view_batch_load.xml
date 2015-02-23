@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/lny_loading_up"
+        android:visibility="gone">
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/loading_top"
+            android:background="@drawable/tact_android_loader_normal_256px"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstv_batch_load"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/lny_loading_down"
+            android:visibility="gone">
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/loading_bottom"
+                android:background="@drawable/tact_android_loader_normal_256px"/>
+        </LinearLayout>
+
+</LinearLayout>

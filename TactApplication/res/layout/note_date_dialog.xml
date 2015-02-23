@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_date_dialog_body"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tact_contact_search_background"
+    style="@android:style/Theme.Holo.Light">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/tact_light_blue"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/date_dialog_cancel"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="X"
+            android:textSize="@dimen/xl_text_size"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Date &amp; Time"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/date_dialog_done"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="√"
+            android:textSize="@dimen/xl_text_size"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:weightSum="3">
+
+        <DatePicker
+            style="@style/Theme.AppCompat.Light"
+            android:id="@+id/date_dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            />
+
+        <TimePicker
+            style="@style/Base.V21.Theme.AppCompat"
+            android:id="@+id/date_dialog_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_weight="0"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

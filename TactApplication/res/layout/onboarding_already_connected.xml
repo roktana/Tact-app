@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:visibility="visible"
+    android:id="@+id/already_connected_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/check_connected"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textColor="@color/mid_grey"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_contact_meeting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_set_connected"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/general_continue_btn"
+        android:text="@string/text_continue"
+        style="@style/tact_orange_button"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/xl_text_size"
+            android:text="@string/note_delete_account"
+            android:id="@+id/popup_text_message"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            
+            <Button
+                android:textColor="@color/grey_mid"
+                android:background="@drawable/standard_grey_button_drawable"
+                android:id="@+id/cancel_button"
+                style="@style/standard_button"
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="@color/action_bar_orange"
+                android:background="@drawable/standard_orange_button_drawable"
+                android:id="@+id/delete_button"
+                style="@style/standard_button"
+                android:text="@string/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            </LinearLayout>
+        
+        </LinearLayout>
+
+</LinearLayout>

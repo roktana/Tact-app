@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_activity_background">#EEE</color>
+    <color name="divider_line">#D7D7D7</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="burnt_brown">#2b1002</color>
+    <color name="dark_blue">#006699</color>
+    <color name="dark_grey">#222222</color>
+    <color name="mid_grey">#666666</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="half_white">#77ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="natural_white">#ffffff</color>
+    <color name="off_white">#F7F5F1</color>
+    <color name="tact_off_white">#FAFAFA</color>
+    <color name="light_gray">#9C9A97</color>
+    <color name="red">#FF0000</color>
+    <color name="dialog_background">#F8F6F2</color>
+    <color name="dialog_background_alpha">#CC333333</color>
+    <color name="button_text_color">#808080</color>
+    <color name="light_blue">#5490B3</color>
+    <color name="theme_blue">#345C6A</color>
+    <color name="green">#00cc00</color>
+    <color name="very_light_blue">#7ECCEC</color>
+    <color name="semi_transparent_grey">#77222222</color>
+    <color name="map_info_window_background">#FFF8F6F2</color>
+    <color name="dark_teal">#326E82</color>
+    <color name="overscroll">#33b5e5</color>
+    <color name="transparent_grey">#29000000</color>
+
+    <color name="linkedin_blue">#2789ba</color>
+
+    <color name="tact_actionbar_background">#FFDDDDDD</color>
+    <color name="tact_actionbar_background_translucent">#EEDDDDDD</color>
+    <color name="tact_actionbar_text">#000000</color>
+
+    <color name="tact_home_background">#FFF2F2F2</color>
+    <color name="tact_home_selected_tab_background">#292e33</color>
+    <color name="tact_home_unselected_tab_background">#31353b</color>
+    <color name="tact_home_checked_tab_background">#3a3e42</color>
+    <color name="tact_home_divider_dark">#a8adb3</color>
+    <color name="tact_home_divider_light">#FFE6E6E6</color>
+
+    <color name="tact_note_background">#FFF37927</color>
+    <color name="tact_note_title_border">#fff3520e</color>
+
+
+    <color name="tact_contact_group_list_heading_text">#FF8A8A8A</color>
+    <color name="tact_contact_section_heading_background">#c8c8cc</color>
+    <color name="tact_contact_icon_background">#e3e3e3</color>
+    <color name="tact_contact_icon_text">#7e949e</color>
+    <color name="tact_contact_search_background">#e3e3e3</color>
+    <color name="tact_contact_search_stroke">#c4c4c4</color>
+    <color name="tact_contact_filter_button_checked_background">@null</color>
+    <color name="tact_contact_filter_button_unchecked_background">@null</color>
+    <color name="tact_contact_filter_button_selected_background">@null</color>
+
+    <color name="tact_contact_details_top_section_background">#575757</color>
+    <color name="tact_contact_details_section_header_button_background">#ccd4d9</color>
+
+    <color name="contacts_filter_button_text_inactive">#FF292929</color>
+    <color name="contacts_filter_button_text_active">#FFF37927</color>
+
+    <color name="buttom_smoth_orange">#FC935F</color>
+
+    <!-- Navigation Drawer -->
+    <color name="navigation_drawer_background">#FFE6E6E6</color>
+    <color name="navigation_drawer_menu_item_text_active">#FF3F3F3F</color>
+    <color name="navigation_drawer_menu_item_text_inactive">#FF939393</color>
+    <color name="navigation_drawer_menu_item_background_inactive">#00FFFFFF</color>
+    <color name="navigation_drawer_menu_item_background_active">#FF999999</color>
+    <color name="navigation_drawer_recent_contacts_background">#FF999999</color>
+    <color name="navigation_drawer_recent_contacts_heading_text">#FF7A7A7A</color>
+    <color name="navigation_drawer_recent_contacts_item_title_text">#FFFFFFFF</color>
+
+    <color name="orange_btn">#EC7829</color>
+    <color name="orange_btn_disable">#FEB07C</color>
+    <color name="green_btn">#A8CA7F</color>
+
+    <color name="text_grey">#747474</color>
+    <color name="text_grey_disable">#BCBCBD</color>
+
+    <color name="btn_white_gray">#E6E6E4</color>
+    <color name="btn_white_gray_disable">#EDEDEA</color>
+
+    <color name="on_boarding_dialog_bg">#34393E</color>
+    <color name="on_boarding_dialog_confirm_btn">#636C79</color>
+
+    <!-- ACTIONBAR -->
+    <color name="action_bar_orange">#F1580D</color>
+    <color name="action_bar_grey">#ececea</color>
+    <color name="action_bar_dark_grey">#4d4d4d</color>
+
+    <!-- SETTINGS LAYOUT COLORS -->
+    <color name="settings_background">#E5E5E5</color>
+    <color name="standard_red">#F44336</color>
+
+    <!-- POPUP OPTION MENU -->
+    <color name="option_menu_bg">#fafafa</color>
+
+    <color name="grey_mid">#A2A2A2</color>
+    <color name="tact_light_grey">#BFBFBF</color>
+    <color name="clear_blue_gray">#94A5AD</color>
+
+    <!-- Log colors -->
+    <color name="tact_light_blue">#0F95D7</color>
+    <color name="tact_light_red">#DE472F</color>
+
+    <color name="light_light_grey">#DADADA</color>
+    
+    <!-- Notes Colors -->
+    <color name="tact_violet">#914AF5</color>
+    
+    <color name="pressed_grey_button">#F2F2F2</color>
+    <color name="hoovered_orange_button">#FDEEE8</color>
+    <color name="pressed_orange_button">#FDB5C8</color>
+    
+    
+
+</resources>

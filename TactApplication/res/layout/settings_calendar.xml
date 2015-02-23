@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <include layout="@layout/settings_actionbar" />
+    <include layout="@layout/divider_layout" />
+    
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/all_calendar_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <include layout="@layout/settings_calendar_block_item" />
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_standard"
+        android:layout_marginBottom="@dimen/padding_standard"
+        android:paddingLeft="@dimen/padding_standard"
+        android:paddingBottom="@dimen/padding_standard"
+        android:paddingRight="@dimen/padding_standard"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="@dimen/padding_medium"
+            android:id="@+id/hide_all_btn"
+            android:text="@string/hide_all_calendars"
+            style="@style/tact_grey_button"/>
+
+        <Button
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:id="@+id/show_all_btn"
+            android:text="@string/show_all_calendars"
+            style="@style/tact_orange_button"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

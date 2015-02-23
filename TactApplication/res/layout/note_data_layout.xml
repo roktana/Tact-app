@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_data_fields_layout"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="false"
+            style="@style/log_layout_field"
+            android:paddingBottom="12sp"
+            android:clickable="true">
+
+            <LinearLayout
+                style="@style/log_layout_field"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/note_type_text_view"
+                    android:clickable="false"
+                    android:textColor="@color/mid_grey"
+                    style="@style/log_edit_text_item"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/saved_salesforce_note"/>
+
+
+                <ToggleButton
+                    android:id="@+id/note_toggle_button_salesforce"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+
+            </LinearLayout>
+            <include layout="@layout/divider_layout"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusableInTouchMode="false"
+            android:id="@+id/note_related_to_layout"
+            style="@style/log_layout_field">
+
+            <TextView
+                android:id="@+id/related_to_title_soft"
+                android:visibility="invisible"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/light_gray"
+                android:text="@string/related_to"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/note_relate_to_name_text_view"
+                    android:textColor="@color/mid_grey"
+                    style="@style/log_edit_text_item"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/related_to"/>
+
+                <ImageView
+                    android:paddingLeft="45dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/related_to_name_text_view"
+                android:textColor="@color/dark_grey"
+                style="@style/log_edit_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/divider_layout"
+                android:id="@+id/note_related_to_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                style="@style/log_text_required"
+                android:id="@+id/note_related_to_required_txt"
+                android:text="@string/log_contact_required_error"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusableInTouchMode="false"
+            android:id="@+id/note_title_layout"
+            style="@style/log_layout_field"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12sp"
+            android:minHeight="70dp">
+            <TextView
+                android:id="@+id/note_title_title_soft"
+                android:visibility="invisible"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/light_gray"
+                android:text="@string/standard_title"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/note_title_text_view"
+                android:textColor="@color/mid_grey"
+                style="@style/log_edit_text_item"
+                android:text="@string/standard_title"/>
+            <EditText
+                android:id="@+id/note_title_edit_text"
+                android:visibility="gone"
+                style="@style/log_edit_text_item"
+                android:textColor="@color/dark_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <include layout="@layout/divider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusableInTouchMode="false"
+            android:id="@+id/note_body_layout"
+            style="@style/log_layout_field"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12sp"
+            android:minHeight="70dp">
+            <TextView
+                android:id="@+id/body_title_soft"
+                android:visibility="invisible"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/light_gray"
+                android:text="@string/body"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/body_text_view"
+                android:textColor="@color/mid_grey"
+                style="@style/log_edit_text_item"
+                android:text="@string/body"/>
+            <EditText
+                android:id="@+id/body_edit_text"
+                android:visibility="gone"
+                style="@style/log_edit_text_item"
+                android:textColor="@color/dark_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/divider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

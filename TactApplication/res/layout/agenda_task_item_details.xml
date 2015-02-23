@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/task_layout"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="0.1">
+
+                <CheckBox
+                    android:id="@+id/check_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:id="@+id/textview_task_subject"
+                    android:text="Task 1"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/textview_task_description"
+                    android:text="Task description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:ellipsize="end"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp">
+
+                    <ImageView
+                        android:id="@+id/clocl_image"
+                        android:src="@drawable/clock_grey"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_marginRight="3sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_task_due_at"
+                        android:text="Due Wednesday"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="right|center_vertical"
+                android:layout_weight="0.1"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageview_task_edit"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:src="@drawable/edit_task_icon"
+                        android:padding="10sp"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_task_delete"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:src="@drawable/delete_icon"
+                        android:padding="10sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/contact_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp">
+
+                <include  layout="@layout/contact_layout_part" android:id="@+id/layout_contact_details" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <ImageView
+                    android:id="@+id/img_task_email"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/email_cool_medium_grey"
+                    android:layout_marginRight="15sp"/>
+
+                <ImageView
+                    android:id="@+id/img_task_call"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/call_medium_grey"
+                    android:layout_marginRight="15sp"/>
+
+                <ImageView
+                    android:id="@+id/img_task_msg"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/conversation"
+                    android:layout_marginRight="15sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

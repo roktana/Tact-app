@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/action_bar_grey"
+            android:layout_marginTop="@dimen/standard_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/calendar_previous_month_week"
+                    style="@style/calendar_arrow_style"
+                    android:src="@drawable/lef_arrow" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/calendar_month_name"
+                    style="@style/calendar_text"
+                    android:textStyle="bold"
+                    android:text="Sep 2014"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/calendar_next_month_week"
+                    style="@style/calendar_arrow_style"
+                    android:src="@drawable/right_arrow"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/action_bar_grey"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_action_bar">
+            
+            <LinearLayout
+                android:weightSum="7"
+                android:orientation="horizontal"
+                android:id="@+id/day_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <com.astuetz.PagerSlidingTabStripPlus
+                android:id="@+id/calendar_tabs"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:pstsDividerColor="@color/divider_line"
+                app:pstsIndicatorColor="@color/action_bar_orange"
+                app:pstsUnderlineHeight="1dp"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsTabBackground="@color/transparent"
+                app:pstsHasDivider="false"
+                app:pstsIndicatorAlpha="225"
+                app:pstsTextColorTab="@color/tab_text_aesthetic"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeft="0dp"
+                app:pstsTabPaddingRight="0dp"
+                app:pstsTabsTitleGravity="@integer/top"
+                app:pstsTabTextSize="@dimen/xl_text_size" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/calendar_day_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/calendar_day_pager_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/action_bar" android:id="@+id/calendar_action_bar" />
+    <include layout="@layout/calendar_floating_button" />
+</FrameLayout>

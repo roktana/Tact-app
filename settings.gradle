@@ -1,0 +1,3 @@
+include ':TactApplication', ':PagerSlidingTabStripPlus'
+include ':ExternalLibs:google-play-services_lib'
+include ':ExternalLibs:InfiniteViewPager'

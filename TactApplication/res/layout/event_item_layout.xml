@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/calendar_meeting_layout"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/event_start_hour"
+                android:textSize="@dimen/l_text_size"
+                android:layout_marginBottom="2dp"
+                android:text="9:00 AM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/event_duration"
+                android:textSize="@dimen/l_text_size"
+                android:textColor="@color/tact_light_red"
+                android:text="30 mins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/event_container"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_standard"
+            android:background="@drawable/event_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    style="@style/TextViewWhiteMedium"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:text="Lannister Huddle"
+                    android:id="@+id/event_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingBottom="@dimen/padding_small"
+                    style="@style/TextViewWhiteSmall"
+                    android:text="Small Councill Chamber"
+                    android:id="@+id/event_contact_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/TextViewWhiteSmall"
+                    android:text="Organized by Oberyn Martell"
+                    android:id="@+id/event_organizer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recurring_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/recurring_small"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

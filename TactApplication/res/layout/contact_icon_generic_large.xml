@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/contact_icon_circle_diameter_large"
+    android:layout_height="@dimen/contact_icon_circle_diameter_large"
+    android:id="@+id/icon_large_relative_layout"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/contact_icon_generic_background_circle"
+        android:layout_width="@dimen/contact_icon_circle_diameter_large"
+        android:layout_height="@dimen/contact_icon_circle_diameter_large"
+        android:background="@drawable/contacts_generic_icon_background" />
+
+    <TextView
+        android:id="@+id/contact_icon_initials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/placeholder_icon_initials"
+        android:layout_centerInParent="true"
+        android:textColor="@color/tact_contact_icon_text"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/contact_icon_generic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_person_avatar_small"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/contacts" />
+
+    <com.tactile.tact.views.RoundImageView
+        android:id="@+id/contact_icon_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

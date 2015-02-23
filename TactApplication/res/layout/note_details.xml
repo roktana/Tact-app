@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <com.tactile.tact.utils.ObservableScrollView
+            android:layout_marginTop="@dimen/standard_action_bar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/note_meeting_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        style="@style/log_details_layout_field">
+
+                        <TextView
+                            style="@style/task_edit_text_item_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/saved_salesforce_note"/>
+                        <TextView
+                            android:visibility="visible"
+                            android:id="@+id/note_details_type_text_view"
+                            style="@style/task_edit_text_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/related_to"
+                        style="@style/log_details_layout_field">
+
+                        <TextView
+                            style="@style/task_edit_text_item_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/related_to"/>
+                        
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/related_to_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            
+                            <include layout="@layout/meeting_invitees_layout"
+                                android:layout_marginLeft="-16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/log_details_layout_field">
+
+                        <TextView
+                            style="@style/task_edit_text_item_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/standard_title"/>
+                        <TextView
+                            android:visibility="visible"
+                            android:id="@+id/note_details_title_text_view"
+                            style="@style/task_edit_text_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/log_details_layout_field">
+
+                        <TextView
+                            style="@style/task_edit_text_item_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/body"/>
+                        <TextView
+                            android:visibility="visible"
+                            android:id="@+id/note_details_body_text_view"
+                            style="@style/task_edit_text_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.tactile.tact.utils.ObservableScrollView>
+
+    </LinearLayout>
+    <include layout="@layout/fragment_action_bar" android:id="@+id/note_details_action_bar"/>
+</FrameLayout>

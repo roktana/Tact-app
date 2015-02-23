@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+
+    <dimen name="navigation_drawer_menu_item_text">14sp</dimen>
+
+    <!-- Contact -->
+    <dimen name="contact_icon_circle_diameter_small">50dp</dimen>
+    <dimen name="contact_icon_circle_diameter_medium">70dp</dimen>
+    <dimen name="contact_icon_circle_diameter_large">80dp</dimen>
+    <dimen name="contact_filter_button_corner_radius">10dp</dimen>
+    <dimen name="contact_filter_button_stroke">1dp</dimen>
+
+    <!-- Action Bar sizes -->
+    <dimen name="standard_action_bar">56dp</dimen>
+    <dimen name="standard_action_bar_2x">112dp</dimen>
+    <dimen name="standard_action_bar_3x">168dp</dimen>
+    <dimen name="standard_action_bar_4x">224dp</dimen>
+    <dimen name="standard_action_bar_5x">280dp</dimen>
+    <dimen name="standard_action_bar_6x">336dp</dimen>
+
+    <dimen name="floating_margin_act_bar_3x">133dp</dimen>
+    <dimen name="floating_margin_act_bar_2x">80dp</dimen>
+    <dimen name="title_no_logo_margin_left">15dp</dimen>
+
+    <dimen name="standart_element_width">72dp</dimen>
+
+
+    <dimen name="button_text_size">15sp</dimen>
+    <dimen name="buton_padding">15dp</dimen>
+    
+    <!-- Images -->
+    <dimen name="small_asset_dimension">24dp</dimen>
+    <dimen name="medium_asset_dimension">48dp</dimen>å
+
+    <!-- OPTION MENU -->
+    <dimen name="option_menu_item_padding">10dp</dimen>
+
+
+    <!-- TEXT DIMENSIONS -->
+    <dimen name="tab_subtitle">6sp</dimen>
+    <dimen name="s_text_size">8sp</dimen>
+    <dimen name="m_text_size">10sp</dimen>
+    <dimen name="l_text_size">12sp</dimen>
+    <dimen name="xl_text_size">14sp</dimen>
+    <dimen name="xxl_text_size">18sp</dimen>
+    <dimen name="fragments_title_text">22sp</dimen>
+    <dimen name="fragment_subtitle_text">18sp</dimen>
+    <dimen name="fragment_subtitle_text_big">20sp</dimen>
+    <dimen name="text_contact_meeting_title">25sp</dimen>
+    <dimen name="big_title">32sp</dimen>
+
+</resources>

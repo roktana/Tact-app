@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/padding_standard"
+        android:paddingRight="@dimen/padding_standard"
+        android:layout_marginTop="@dimen/standard_action_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/task_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_on_boarding_grey"
+                    android:button="@null"
+                    android:id="@+id/task_checkbox"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/xl_text_size"
+                        android:id="@+id/task_subject"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/log_subject_text"
+                        android:layout_marginBottom="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_layout" android:id="@+id/task_divider" />         
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_standard"
+            android:paddingBottom="@dimen/padding_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/log_details_layout_field">
+
+                <TextView
+                    style="@style/task_edit_text_item_title"
+                    android:layout_width="match_parent"
+                    android:text="@string/tasks_salesforce_task"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/task_type_text_view"
+                    style="@style/task_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/log_details_layout_field">
+
+                <TextView
+                    style="@style/task_edit_text_item_title"
+                    android:layout_width="match_parent"
+                    android:text="@string/contact"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/contact_name_text_view"
+                    style="@style/task_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/log_details_layout_field">
+
+                <TextView
+                    style="@style/task_edit_text_item_title"
+                    android:layout_width="match_parent"
+                    android:text="@string/related_to"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/related_to_name_text_view"
+                    style="@style/task_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/log_details_layout_field">
+
+                <TextView
+                    style="@style/task_edit_text_item_title"
+                    android:layout_width="match_parent"
+                    android:text="@string/log_description_text"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/task_description_text_view"
+                    style="@style/task_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/log_details_layout_field">
+
+                <TextView
+                    style="@style/task_edit_text_item_title"
+                    android:layout_width="match_parent"
+                    android:text="@string/due_date_text"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/due_text_view"
+                    style="@style/task_edit_text_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+    <include layout="@layout/fragment_action_bar" android:id="@+id/task_create_action_bar" />
+</FrameLayout>

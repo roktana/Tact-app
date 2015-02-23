@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/tact_violet"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:id="@+id/task_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/standard_action_bar_2x"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/task_icon_field"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:layout_width="37dp"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:src="@drawable/logging_calendar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/note_title"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/note_title_textview"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragments_title_text"
+                android:gravity="center_vertical"
+                android:text="@string/create_note"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/note_to_field"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/note_contact_textview"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/fragment_subtitle_text"
+            android:text="@string/contact"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="@dimen/xl_text_size"
+        android:textColor="@color/white"
+        android:text="@string/log_subject_text"
+        android:id="@+id/task_subject_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

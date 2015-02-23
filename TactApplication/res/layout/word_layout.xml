@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    android:id="@+id/word_text_view_layout"
+    android:textSize="@dimen/l_text_size"
+    android:textAllCaps="true"
+    android:textColor="@color/tab_text_aesthetic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="a">
+
+</TextView>

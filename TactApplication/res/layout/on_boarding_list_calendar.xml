@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cloudteams="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    style="@style/items_block_item"
+    android:clickable="true"
+    android:id="@+id/calendar_item">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_marginRight="16dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/checkbox_on_boarding_grey"
+            android:button="@null"
+            android:id="@+id/check_box_calendar_selected"/>
+
+        <com.tactile.tact.utils.CircleView
+            cloudteams:circleRadius="20dp"
+            cloudteams:fillColor="@android:color/holo_orange_light"
+            android:layout_width="20dp"
+            android:id="@+id/view_calendar_color"
+            android:layout_height="20dp" />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="serif-sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text_view_calendar_name"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+
+                android:id="@+id/text_view_calendar_description"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout"/>
+
+</LinearLayout>

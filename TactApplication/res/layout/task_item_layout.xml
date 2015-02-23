@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:background="@drawable/drawer_menu_selector"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/checkbox_on_boarding_grey"
+            android:button="@null"
+            android:id="@+id/task_checkbox"/>
+        
+        <LinearLayout
+            android:id="@+id/task_container"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/l_text_size"
+                android:id="@+id/task_subject"
+                android:layout_marginLeft="5dp"
+                android:text="@string/log_subject_text"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/light_gray"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/m_text_size"
+                android:id="@+id/task_contact"
+                android:layout_marginLeft="5dp"
+                android:text="@string/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            
+            </LinearLayout>
+        
+        
+        </LinearLayout>
+    
+    <include layout="@layout/divider_layout" android:id="@+id/task_divider" />
+    
+
+</LinearLayout>
